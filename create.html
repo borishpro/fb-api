@@ -12,13 +12,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="robots" content="all,index,follow" />
 
-	<script src="js/jquery.js"></script>
-	<script src="js/materialize.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script src="js/main.js"></script>
+
+
 
 </head>
-<body>
+<body class="grey lighten-2">
 
 <header>
 	<div class="navbar-fixed">
@@ -27,15 +25,20 @@
 	        	<div class="container">
 			        <a href="create.html" class="brand-logo hide-on-med-and-down">Testro.com</a>
 			        <a href="create.html" class="brand-logo center hide-on-large-only">Testro.com</a>
+			        <ul class="left hide-on-large-only">
+			        	<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+			        </ul>
+			        <ul class="right">
+			        	<li><a class="dropdown-button" href='#' data-activates="dropdown1"><i class="material-icons">account_circle</i></a></li>
+			            <ul id='dropdown1' class='dropdown-content'>
+						    <li><a href="#!">one</a></li>
+						</ul>
+					</ul>
 			        <ul class="right hide-on-med-and-down">
-			            <li><a href="index.html.html">Home</a></li>
-			            <li><a href="tending.html.html">Trending</a></li>
+			            <li><a href="index.html">Home</a></li>
+			            <li><a href="tending.html">Trending</a></li>
 			            <li><a href="create.html">Create Test</a></li>
 			            <li><a href="create.html">My Test</a></li>
-			            <li><a class='dropdown-button' href='#' data-activates='dropdown1'><i class="material-icons">account_circle</i></a></li>
-			            <ul id='dropdown1' class='dropdown-content'>
-							<li><a href="profile.html">Login</a></li>
-						</ul>
 			        </ul>
 			    </div>
 		    </div>
@@ -43,110 +46,119 @@
 	</div>
 </header>
 
+<aside>
+	<ul id="slide-out" class="side-nav">
+	    <li><a href="index.html">Home</a></li>
+		<li><a href="tending.html">Trending</a></li>
+		<li><a href="create.html">Create Test</a></li>
+		<li><a href="create.html">My Test</a></li>
+    </ul>
+</aside>
+
 <main>
 	<div class="container">
-		<div class="activity-box">
-			<div class="about">
-				<h1>CREATE YOUR OWN TEST!</h1>
-			</div>
-			<div class="s-container">
-				<div class="title">
-					<h1 align="center">Please select what kind of test you want to create</h1>
-				</div>
-				<div class="type-container">
+		<div class="activity-box white">
+			<div class="row">
+				<div class="current-test col l7 m7 s10 offset-l1 offset-m1 offset-s1 z-depth-3">
+					<h1 align="center">How will you and your future partner meet ?</h1>
+					<h3 align="center">Please login with Facebook to see your result</h3>
 					<div class="row">
-						<div class="type">
-							<div class="card small col l5 m5 s12">
-							    <div class="card-image waves-effect waves-block waves-light">
-							        <img class="activator" src="images/test1.jpg">
-							    </div>
-							    <div class="card-content">
-							        <span class="card-title activator grey-text text-darken-4">Test with Text Result<i class="material-icons right">more_vert</i></span>
-							        <div class="card-action">
-							        	<a href="test-text.html">Create Test</a>
-							        </div>
-							    </div>
-							    <div class="card-reveal">
-							        <span class="card-title grey-text text-darken-4">Test with Text Result<i class="material-icons right">close</i></span>
-							        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-							    </div>
-							</div>
-							<div class="card small col l5 m5 s12 push-l1 push-m1">
-							    <div class="card-image waves-effect waves-block waves-light">
-							        <img class="activator" src="images/test2.jpg">
-							    </div>
-							    <div class="card-content">
-							        <span class="card-title activator grey-text text-darken-4">Test with Images Result<i class="material-icons right">more_vert</i></span>
-							        <div class="card-action">
-							        	<a href="test-images1.html">Create Test</a>
-							        </div>
-							    </div>
-							    <div class="card-reveal">
-							        <span class="card-title grey-text text-darken-4">Test with Images Result<i class="material-icons right">close</i></span>
-							        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-							    </div>
-							</div>
-							<div class="card small col l5 m5 s12">
-							    <div class="card-image waves-effect waves-block waves-light">
-							        <img class="activator" src="images/test3.jpg">
-							    </div>
-							    <div class="card-content">
-							        <span class="card-title activator grey-text text-darken-4">Images Test<i class="material-icons right">more_vert</i></span>
-							        <div class="card-action">
-							        	<a href="test-images2.html">Create Test</a>
-							        </div>
-							    </div>
-							    <div class="card-reveal">
-							        <span class="card-title grey-text text-darken-4">Images Test (no text)<i class="material-icons right">close</i></span>
-							        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-							    </div>
-							</div>
-							<div class="card small col l5 m5 s12 push-l1 push-m1">
-							    <div class="card-image waves-effect waves-block waves-light">
-							        <img class="activator" src="images/test4.jpg">
-							    </div>
-							    <div class="card-content">
-							        <span class="card-title activator grey-text text-darken-4">Friend Test<i class="material-icons right">more_vert</i></span>
-							        <div class="card-action">
-							        	<a href="test-friend1.html">Create Test</a>
-							        </div>
-							    </div>
-							    <div class="card-reveal">
-							        <span class="card-title grey-text text-darken-4">Friend Test<i class="material-icons right">close</i></span>
-							        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-							    </div>
-							</div>
-							<div class="card small col l5 m5 s12">
-							    <div class="card-image waves-effect waves-block waves-light">
-							        <img class="activator" src="images/test5.jpg">
-							    </div>
-							    <div class="card-content">
-							        <span class="card-title activator grey-text text-darken-4">Friend Test<i class="material-icons right">more_vert</i></span>
-							        <div class="card-action">
-							        	<a href="test-friend2.html">Create Test</a>
-							        </div>
-							    </div>
-							    <div class="card-reveal">
-							        <span class="card-title grey-text text-darken-4">Freind Test<i class="material-icons right">close</i></span>
-							        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-							    </div>
-							</div>
-							<div class="card small col l5 m5 s12 push-l1 push-m1">
-							    <div class="card-image waves-effect waves-block waves-light">
-							        <img class="activator" src="images/test6.jpg">
-							    </div>
-							    <div class="card-content">
-							        <span class="card-title activator grey-text text-darken-4">Newspaper Test<i class="material-icons right">more_vert</i></span>
-							        <div class="card-action">
-							        	<a href="test-newspaper.html">Create Test</a>
-							        </div>
-							    </div>
-							    <div class="card-reveal">
-							        <span class="card-title grey-text text-darken-4">Newspaper Test<i class="material-icons right">close</i></span>
-							        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-							    </div>
-							</div>
-						</div>
+						<a class=" col offset-l4 offset-m3 offset-s2 waves-effect waves-light btn"><i class="material-icons left">account_box</i>Login in Facebook</a>
+					</div>
+				</div>
+				<div id="ads" class="col l3 m3 s11">
+					<p>Advertisement</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l4 m4 s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					        <a href="#"><img class="activator" src="images/test7.jpg"></a>
+					    </div>
+					    <div class="card-content">
+					        <p><a href="#">where will be your honeymoon ??</a></p>
+					    </div>
+					</div>
+				</div>
+				<div class="col l4 m4 s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					        <a href="#"><img class="activator" src="images/test7.jpg"></a>
+					    </div>
+					    <div class="card-content">
+					        <p><a href="#">where will be your honeymoon ??</a></p>
+					    </div>
+					</div>
+				</div>
+				<div class="col l4 m4 s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					        <a href="#"><img class="activator" src="images/test7.jpg"></a>
+					    </div>
+					    <div class="card-content">
+					        <p><a href="#">where will be your honeymoon ??</a></p>
+					    </div>
+					</div>
+				</div>
+				<div class="col l4 m4 s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					        <a href="#"><img class="activator" src="images/test7.jpg"></a>
+					    </div>
+					    <div class="card-content">
+					        <p><a href="#">where will be your honeymoon ??</a></p>
+					    </div>
+					</div>
+				</div>
+				<div class="col l4 m4 s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					        <a href="#"><img class="activator" src="images/test7.jpg"></a>
+					    </div>
+					    <div class="card-content">
+					        <p><a href="#">where will be your honeymoon ??</a></p>
+					    </div>
+					</div>
+				</div>
+				<div class="col l4 m4 s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					        <a href="#"><img class="activator" src="images/test7.jpg"></a>
+					    </div>
+					    <div class="card-content">
+					        <p><a href="#">where will be your honeymoon ??</a></p>
+					    </div>
+					</div>
+				</div>
+				<div class="col l4 m4 s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					        <a href="#"><img class="activator" src="images/test7.jpg"></a>
+					    </div>
+					    <div class="card-content">
+					        <p><a href="#">where will be your honeymoon ??</a></p>
+					    </div>
+					</div>
+				</div>
+				<div class="col l4 m4 s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					        <a href="#"><img class="activator" src="images/test7.jpg"></a>
+					    </div>
+					    <div class="card-content">
+					        <p><a href="#">where will be your honeymoon ??</a></p>
+					    </div>
+					</div>
+				</div>
+				<div class="col l4 m4 s6">
+					<div class="card hoverable">
+					    <div class="card-image waves-effect waves-block waves-light">
+					        <a href="#"><img class="activator" src="images/test7.jpg"></a>
+					    </div>
+					    <div class="card-content">
+					        <p><a href="#">where will be your honeymoon ??</a></p>
+					    </div>
 					</div>
 				</div>
 			</div>
@@ -181,7 +193,10 @@
     </div>
 </footer>
             
-
+<script src="js/jquery.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
